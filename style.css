@@ -1325,7 +1325,8 @@ footer .links{
 
 .testimonial{
   padding: 20px;
-  width:100%;
+  width:400px;
+  max-width:100%;
   display: block;
 }
 
@@ -1335,6 +1336,8 @@ footer .links{
   margin-top: 20px;
   white-space: wrap;
   text-wrap: pretty;
+  width:400px;
+  max-width:100%;
 }
 
 
