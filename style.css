@@ -1051,11 +1051,15 @@ footer .links a{
 
 
 .testimonial{
-  padding: 40px;
+  padding: 20px;
   background: var(--bg-clr);
   border-radius: 20px;
   height: 300px;
-  aspect-ratio: 1;
+  width: 300px;
+}
+
+.testimonial p{
+  white-space: wrap;
 }
 
 .col-two{
@@ -1290,6 +1294,10 @@ footer .links a{
 footer .two-col{
   grid-template-columns: 1fr;
  
+}
+
+footer .links{
+  margin-top: 40px;
 }
   
 }
