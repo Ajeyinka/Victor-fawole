@@ -1306,15 +1306,13 @@ footer .links{
   overflow: hidden;
   padding: 0px 0;
   white-space: wrap;
-  position: relative;
+  position: static;
   
  
 }
 
 
-.testimonials:hover .slides {
-  animation-play-state: paused;
-}
+
 
 .slides {
   display: grid;
@@ -1322,6 +1320,21 @@ footer .links{
   gap:20px;
   animation: 30s slide infinite linear;
   margin: 0px 20px 0px 0px;
+}
+
+
+.testimonial{
+  padding: 20px;
+  width:100%;
+  display: block;
+}
+
+.testimonial p{
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  white-space: wrap;
+  text-wrap: pretty;
 }
 
 
