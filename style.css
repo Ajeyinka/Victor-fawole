@@ -1285,6 +1285,7 @@ footer .links a{
 
 .testimonial{
   padding: 20px;
+  width:100%;
  
 }
 
@@ -1300,4 +1301,41 @@ footer .links{
   margin-top: 40px;
 }
   
+.testimonials {
+  
+  overflow: hidden;
+  padding: 0px 0;
+  white-space: wrap;
+  position: relative;
+  
+ 
+}
+
+
+.testimonials:hover .slides {
+  animation-play-state: paused;
+}
+
+.slides {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+  animation: 30s slide infinite linear;
+  margin: 0px 20px 0px 0px;
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(0);
+  }}
+
+
+  .hhide{
+    display: none;
+    border: 5px solid red;
+  }
 }

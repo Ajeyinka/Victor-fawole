@@ -1,5 +1,4 @@
-var copy = document.querySelector(".slides").cloneNode(true);
-    document.querySelector(".testimonials").appendChild(copy); 
+
 
 
     let valueDisplays = document.querySelectorAll (".num");
