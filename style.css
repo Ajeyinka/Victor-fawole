@@ -1109,7 +1109,7 @@ footer .links a{
 }
 
 .hero-cols img{
-  height: 200px;
+ 
 }
 
 .tex-span{
@@ -1287,6 +1287,9 @@ footer .links a{
 .nav-button{
   display: none;
 }
-
+footer .two-col{
+  grid-template-columns: 1fr;
+ 
+}
   
 }
