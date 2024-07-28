@@ -273,7 +273,7 @@ aspect-ratio: 1/1;
 
 .toggle-button {
 position: absolute;
-top:0px;
+top:20px;
 right:15px;
 display: none;
 flex-direction: column;
@@ -404,7 +404,7 @@ nav ul .btn{
   width:100%;
   left: 0px;
   transform: translateX(0%);
-  background: #ffffff;
+  background: var(--bg-clr);
   color: var(--pri-clr);
  
   
@@ -467,9 +467,8 @@ width: 100%;
 
 .ava.navactive{
   position: relative;
-  background-color: var(--sec-clr);
-  color: var(--bg-clr);
-  border:1px solid var(--sec-clr);
+  color: var(--accent-clr);
+  
   
   
 }
@@ -478,16 +477,16 @@ width: 100%;
 
 
 
-/* .ava.navactive:after {
+  .ava.navactive:after {
   content: '';
   position: absolute;
   left: 0px;
   bottom:-8px;
   width: 100%;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--accent-clr);
   animation: moves 400ms ease-in;
 }
- */
+  
 
 
 
@@ -510,7 +509,7 @@ to {
 
 .switch {
   /* switch */
-  --switch-width: 46px;
+  --switch-width: 36px;
   --switch-height: 24px;
   --switch-bg: rgb(131, 131, 131);
   --switch-checked-bg: black;
@@ -1037,7 +1036,7 @@ margin-top: 20px;
  
   grid-template-columns: 1fr;
   
-  text-align: center;
+  
 
 }
 
@@ -1066,7 +1065,7 @@ margin-top: 20px;
   
   position: relative;
   top:0px;
-  margin-inline: auto;
+  
  
 } 
 
@@ -1324,12 +1323,13 @@ footer .links a{
   padding: 20px;
   background: var(--bg-clr);
   border-radius: 20px;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 .testimonial p{
   white-space: wrap;
+  margin-top: 40px;
 }
 
 .col-two{
@@ -1561,8 +1561,9 @@ footer .links a{
  
 }
 
-.nav-button{
+.nav-button .button{
   display: none;
+  
 }
 footer .two-col{
   grid-template-columns: 1fr;
@@ -1665,6 +1666,7 @@ footer .links{
   width: 100%; 
   height: 200px;
   fill: var(--pri-clr);
+  z-index: 1000000000000000000000000;
 
 -webkit-animation-name: rotate;
    -moz-animation-name: rotate;
@@ -1988,4 +1990,40 @@ textarea {
   to {
     transform: translateX(-100%);
   }
+}
+
+
+@media(max-width:900px){
+  .how{
+   
+    grid-template-columns:1fr;
+    
+    
+  }
+}
+
+
+.launch-time{
+  display: flex;
+  
+}
+
+.launch-time div {
+  flex-basis: 100px;
+}
+.launch-time div p {
+  font-size: var(--fs-1);
+  margin-bottom: 0px;
+  font-family: var(--ff-2);
+  color: var(--pri-clr);
+  font-weight: 600;
+}
+.launch-time div p span{
+  font-weight: 400;
+
+}
+
+.come{
+  font-size: var(--fs-4);
+ 
 }
