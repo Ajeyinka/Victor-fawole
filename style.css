@@ -467,7 +467,7 @@ width: 100%;
 
 .ava.navactive{
   position: relative;
-  color: var(--accent-clr);
+ 
   
   
   
@@ -2000,7 +2000,22 @@ textarea {
     
     
   }
-}
+
+  nav li:hover .menu-sub{
+    display: none;
+    
+  }
+
+  #circle { 
+    
+    display: none;
+   
+   
+    
+  }
+  
+  }
+
 
 
 .launch-time{
@@ -2026,4 +2041,10 @@ textarea {
 .come{
   font-size: var(--fs-4);
  
+}
+
+.btn-hold{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
